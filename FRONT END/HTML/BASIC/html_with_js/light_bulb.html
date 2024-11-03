@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(51, 46, 46);
+            color: yellow;
+            font-family: sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container h1{
+            font-size: 120px;
+            color: transparent;
+            -webkit-text-stroke: 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="light_bulb_on" height="200px" id="lb">
+        <h2 style="text-align: center;">Light Blub Simulation</h2>
+        <button onclick="myfunction()" id="btn">Toggle</button>
+    </div>
+
+    <script>
+        var link;
+        let visibility = true;
+        function myfunction(){
+            var x = document.getElementById("para");
+            var y = document.getElementById("btn");
+            var z = document.getElementById("lb");
+            if(visibility){
+                btn.innerHTML="Turn OFF";
+                z.src="https://www.w3schools.com/js/pic_bulbon.gif";
+            }
+            else{
+                btn.innerHTML="Turn ON";
+                z.src="https://www.w3schools.com/js/pic_bulboff.gif";
+            }
+            visibility = !visibility;
+        }
+    </script>
+</body>
+</html>

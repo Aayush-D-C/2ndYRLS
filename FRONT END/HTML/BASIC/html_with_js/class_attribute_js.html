@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(51, 46, 46);
+            color: yellow;
+            font-family: sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container h1{
+            font-size: 120px;
+            color: transparent;
+            -webkit-text-stroke: 2px white;
+        }
+        #btn{
+            background-color: blue;
+            border: none;
+            height: 10vh;
+            color: white;
+            width: 20vw;
+            margin-top: 2vh;
+            font-size: 40px;
+            font-family: sans-serif;
+            font-weight: 600;
+            transition: 0.25s;
+        }
+        #btn:hover{
+            transform: scale(1.05);
+            box-shadow: 10px 20px 30px rgb(0, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Hello Everyone</h1>
+        <h2 id="para" style="text-align: center;">This Text will all disappear after clicking the button</h2>
+        <button onclick="myfunction()" id="btn">Toggle</button>
+    </div>
+
+    <script>
+        let visibility = true;
+        function myfunction(){
+            var x = document.getElementById("para");
+            var y = document.getElementById("btn");
+            if(visibility){
+                btn.innerHTML="Show";
+                x.style.display = "none";
+            }
+            else{
+                btn.innerHTML="Hide";
+                x.style.display = "block";
+            }
+            visibility = !visibility;
+        }
+    </script>
+</body>
+</html>

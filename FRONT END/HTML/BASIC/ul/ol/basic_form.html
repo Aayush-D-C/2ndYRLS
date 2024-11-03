@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Table</title>
+    <style>
+        body{
+            background-color: rgb(115, 114, 114);
+        }
+        section{
+            display: flex;
+            background: rgb(37, 27, 27);
+            color: white;
+            font-size: 25px;
+            font-family: sans-serif;
+            height: 60vh;
+            border-radius: 12px;
+            padding: 80px;
+            justify-content: center;
+            align-items: center;
+            gap: 25vw;
+            margin: 10vh 10vw;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            text-align: center;
+            width: 60vw;
+        }
+        h1{
+            font-size: 80px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 style="text-align: center;">Form Example</h1>
+        <form onsubmit="myFunc()">
+                <label for="para">Normal text field</label>
+                <input type="text" id="para">
+                <label for="">Comment</label>
+                <textarea name="Comment" id="" rows="3" cols="10"></textarea>
+                <Label>
+                    Password
+                </Label>
+                <input type="password" placeholder="password">
+                <label>Select Department:</label>
+                <select name="Department">
+                    <option value="">Opthalmologist</option>
+                    <option value="">ECT</option>
+                </select>
+                    <input type="radio" value="Male" id="genderCheckMale" name="gender">Male
+                    <input type="radio" value="Female" id="genderCheckFemale" name="gender">Female
+                <input type="submit" value="submit">
+        </form>
+    </section>
+    <script>
+        function myFunc(){
+            alert("You have successfully submitted the form");
+        }
+    </script>
+</body>
+</html>
