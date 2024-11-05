@@ -12,6 +12,10 @@
             font-family: sans-serif;
         }
 
+        body{
+            height: 250vh;
+        }
+
         .container{
             display: flex;
             justify-content: center;
@@ -20,6 +24,7 @@
             background-color: black;
             color: white;
             margin: 34px;
+            padding: 12px;
         }
     </style>
 </head>
@@ -31,8 +36,8 @@
         <p>Here is a simple image of cat which is responisive according to screen width of device. With using 100% and not using max and min width.</p>
         <img src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D" alt="A close-up of a cute cat" width="100%">
         <p style="border-bottom: 1px solid red;">Here is the same example but containing max and min width.</p>
-        <img src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D" alt="A close-up of a cute cat" style="min-width: 80%; max-width: 100%;">
-        <h3 style="border:1px solid red; padding: 5px;">You can see the differnece yourself</h3>
+        <img src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D" alt="A close-up of a cute cat" style="min-width: 700px; max-width: 800px; width: 100%;">
+        <h3 style="box-shadow: 10px 10px 5px rgba(216, 216, 216, 0.3), -5px -5px 5px rgba(182, 0, 0, 0.5);">You can see the differnece yourself</h3>
     </div>
 </body>
 </html>

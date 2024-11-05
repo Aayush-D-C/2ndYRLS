@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        output {
+            margin-top: 10px;
+            font-weight: bold;
+            border: 1px solid black;
+            width: 600px;
+            height: 400px;
+            text-align: center;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" name="myForm">
+        <label for="newinput">Enter a value:</label>
+        <input type="text" id="newinput" name="newinput">
+        <button type="button" onclick="showResult()">Show Result</button>
+        <output name="result"></output>
+    </form>
+
+    <script>
+        function showResult() {
+            const inputValue = document.getElementById("newinput").value;
+            document.forms["myForm"]["result"].value = inputValue;
+        }
+    </script>
+</body>
+</html>
