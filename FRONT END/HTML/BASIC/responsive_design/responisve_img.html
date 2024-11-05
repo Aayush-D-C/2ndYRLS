@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+            margin: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="font-size: 45px;">Responsive Image</h2>
+        <h3>Repsonsive is a must in web development.</h3><br>
+        <h3>We will learn about repsonsive image in this part</h3>
+        <p>Here is a simple image of cat which is responisive according to screen width of device. With using 100% and not using max and min width.</p>
+        <img src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D" alt="A close-up of a cute cat" width="100%">
+        <p style="border-bottom: 1px solid red;">Here is the same example but containing max and min width.</p>
+        <img src="https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D" alt="A close-up of a cute cat" style="min-width: 80%; max-width: 100%;">
+        <h3 style="border:1px solid red; padding: 5px;">You can see the differnece yourself</h3>
+    </div>
+</body>
+</html>

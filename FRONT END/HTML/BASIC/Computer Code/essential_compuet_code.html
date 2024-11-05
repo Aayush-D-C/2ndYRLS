@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Snippet Example</title>
+    <style>
+        /* Optional styling to make the code look nice */
+        pre {
+            background-color: #323131;
+            padding: 10px;
+            border-radius: 5px;
+            width: 30%;
+            height: 10vh;
+            overflow: auto;
+        }
+        code {
+            font-family: monospace;
+            color: #e4dfe2; /* Choose a color for your code */
+        }
+
+        kbd {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        
+        samp {
+            background-color:#323131;
+            border: 1px solid #ddd;
+            color: #e4dfe2;
+            padding: 5px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        var {
+            font-style: italic;  /* Default: italic font */
+            color: #007bff;      /* Blue color for better visibility */
+        }
+    </style>
+</head>
+<body>
+<div class="main_body">
+    <div class="code_section">
+        
+        <h1 style="font-size: 40px;">Displaying Code in HTML</h1>
+        
+        <p>Here is an example of <span style="color:green; font-weight: 600;">HTML</span> code:</p>
+        <pre>
+<code>&lt;div class="example"&gt;
+&lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;
+&lt;/div&gt;</code>
+</pre>
+
+<p>Here is an example of <span style="color:purple; font-weight: 600;">CSS</span> code:</p>
+    <pre><code>body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}</code></pre>
+
+<p>Here is an example of <span style="color:rgb(150, 150, 0); font-weight: 600;">JavaScript</span> code:</p>
+<pre><code>function greet() {
+    alert("Hello, World!");
+}</code></pre>
+</div>
+
+<div class="kbd_section">
+    <h1 style="font-size: 40px;">Displaying keyword characters in HTML</h1>
+    <h1>Using the <kbd> Tag</h1>
+    <p>To copy text, press <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+    <p>To paste text, press <kbd>Ctrl</kbd> + <kbd>V</kbd>.</p>
+</div>
+
+<div class="samp_section">
+    <h1>Using the <samp> Tag</h1>
+        <p>Example of sample output:</p>
+        <samp>File not found. Please check the file path and try again.</samp>
+    </div>
+    
+    <div class="var_section">
+        <h1>Mathematical Variables</h1>
+        <p>The equation <var>y</var> = <var>mx</var> + <var>b</var> is used in linear algebra.</p>
+        
+        <h2>Programming Variables</h2>
+        <p>In programming, <var>counter</var> is often used as a loop variable.</p>
+    </div>
+</div>
+</body>
+</html>
