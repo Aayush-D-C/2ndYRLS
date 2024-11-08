@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Custom Scrollbars</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      scroll-behavior: smooth;
+    }
+
+    h1 {
+      margin-bottom: 5rem;
+      font-size: 5rem;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      height: 200px;
+      overflow-y: scroll;
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: ease-in-out;
+    }
+
+    .container:hover{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),-2px -2px 4px rgba(0, 0, 0, 0.1);
+        scale: 1.01;        
+    }
+
+    .content {
+      height: 600px;
+    }
+
+    /* Default scrollbar */
+    .default-scrollbar::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    .default-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #cccccc;
+      border-radius: 10px;
+    }
+
+    .default-scrollbar::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Thin scrollbar */
+    .thin-scrollbar::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .thin-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 10px;
+    }
+
+    .thin-scrollbar::-webkit-scrollbar-track {
+      background: #eee;
+    }
+
+    /* Colored scrollbar */
+    .colored-scrollbar::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    .colored-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #007BFF;
+      border-radius: 10px;
+    }
+
+    .colored-scrollbar::-webkit-scrollbar-track {
+      background: #d1ecf1;
+    }
+
+    /* Gradient scrollbar */
+    .gradient-scrollbar::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    .gradient-scrollbar::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #ff7a18, #af002d);
+      border-radius: 10px;
+    }
+
+    .gradient-scrollbar::-webkit-scrollbar-track {
+      background: #fbe4d5;
+    }
+
+    /* Rounded scrollbar */
+    .rounded-scrollbar::-webkit-scrollbar {
+      width: 12px;
+      background-color: #f0f0f0;
+    }
+
+    .rounded-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #6c757d;
+      border-radius: 20px;
+      border: 3px solid #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Custom Scrollbars</h1>
+
+  <div class="container default-scrollbar">
+    <h2>Default Scrollbar</h2>
+    <div class="content">Content to scroll through...</div>
+  </div>
+
+  <div class="container thin-scrollbar">
+    <h2>Thin Scrollbar</h2>
+    <div class="content">Content to scroll through...</div>
+  </div>
+
+  <div class="container colored-scrollbar">
+    <h2>Colored Scrollbar</h2>
+    <div class="content">Content to scroll through...</div>
+  </div>
+
+  <div class="container gradient-scrollbar">
+    <h2>Gradient Scrollbar</h2>
+    <div class="content">Content to scroll through...</div>
+  </div>
+
+  <div class="container rounded-scrollbar">
+    <h2>Rounded Scrollbar</h2>
+    <div class="content">Content to scroll through...</div>
+  </div>
+</body>
+</html>

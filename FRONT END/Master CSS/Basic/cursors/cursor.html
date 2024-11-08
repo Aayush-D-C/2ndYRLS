@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Cursors and Custom Pointers</title>
+  <style>
+    /* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 90%;
+      max-width: 600px;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Default cursor styles */
+    .default-cursor {
+      cursor: default;
+    }
+
+    .pointer-cursor {
+      cursor: pointer;
+    }
+
+    .text-cursor {
+      cursor: text;
+    }
+
+    .wait-cursor {
+      cursor: wait;
+    }
+
+    .crosshair-cursor {
+      cursor: crosshair;
+    }
+
+    /* Custom image cursor */
+    .custom-cursor {
+      cursor: url('https://www.simpleimageresizer.com/_uploads/photos/190153b7/cursor_1_optimized.png'), auto;
+    }
+
+    /* Custom emoji cursor */
+    .emoji-cursor {
+      cursor: url('https://via.placeholder.com/25x25.png?text=😀'), auto;
+    }
+
+    /* Disabled cursor */
+    .disabled-cursor {
+      cursor: not-allowed;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Cursors and Custom Pointers</h1>
+
+  <div class="container default-cursor">
+    <h2>Default Cursor</h2>
+    <p>This section uses the default cursor (usually an arrow).</p>
+  </div>
+
+  <div class="container pointer-cursor">
+    <h2>Pointer Cursor</h2>
+    <p>This section uses the pointer cursor, often seen when hovering over links or buttons.</p>
+  </div>
+
+  <div class="container text-cursor">
+    <h2>Text Cursor</h2>
+    <p>This section uses the text cursor, ideal for indicating editable text areas.</p>
+  </div>
+
+  <div class="container wait-cursor">
+    <h2>Wait Cursor</h2>
+    <p>This section uses the wait cursor, often used for loading or pending actions.</p>
+  </div>
+
+  <div class="container crosshair-cursor">
+    <h2>Crosshair Cursor</h2>
+    <p>This section uses the crosshair cursor, commonly used in graphics applications.</p>
+  </div>
+
+  <div class="container custom-cursor">
+    <h2>Custom Image Cursor</h2>
+    <p>This section uses a custom image as the cursor (replace with your own image URL).</p>
+  </div>
+
+  <div class="container emoji-cursor">
+    <h2>Custom Emoji Cursor</h2>
+    <p>This section uses a custom emoji image as the cursor (replace with your own emoji image URL).</p>
+  </div>
+
+  <div class="container disabled-cursor">
+    <h2>Disabled Cursor</h2>
+    <p>This section uses the not-allowed cursor, typically for disabled elements.</p>
+  </div>
+</body>
+</html>

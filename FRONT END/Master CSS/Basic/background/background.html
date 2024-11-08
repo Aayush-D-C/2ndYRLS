@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Background Image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 20px;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(to right,#640638,#013e41);
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+        }
+
+        .container {
+            width: 80%;
+            height: 80%;
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 80px; text-shadow: 10px 20px 30px rgb(248, 70, 70), -10px -20px 30px rgb(248, 70, 70);">Background property</h1>
+    <div class="container">
+        </div>
+</body>
+</html>

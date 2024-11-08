@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Border Types with Buttons</title>
+  <style>
+    /* General styling for the body and buttons */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      height: 100vh;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-bottom: 60px;
+      color: #333;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* Different border styles */
+    .solid-border {
+      border: 3px solid #007BFF;
+      border-top-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: white;
+      color: #007BFF;
+    }
+
+    .dashed-border {
+      border: 3px dashed #28A745;
+      border-top-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: white;
+      color: #28A745;
+    }
+
+    .dotted-border {
+      border: 3px dotted #DC3545;
+      border-top-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: white;
+      color: #DC3545;
+    }
+
+    .double-border {
+      border: 4px double #FFC107;
+      border-top-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: white;
+      color: #FFC107;
+    }
+
+    .groove-border {
+      border: 4px groove #6F42C1;
+      border-top-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: white;
+      color: #6F42C1;
+    }
+
+    .ridge-border {
+      border: 4px ridge #17A2B8;
+      border-top-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: white;
+      color: #17A2B8;
+    }
+
+    .inset-border {
+      border: 4px inset #FD7E14;
+      border-top-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: white;
+      color: #FD7E14;
+    }
+
+    .outset-border {
+      border: 4px outset #20C997;
+      border-top-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: white;
+      color: #20C997;
+    }
+
+    /* Hover effect for buttons */
+    button:hover {
+      background-color: #333;
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      /* border-image: url("https://images.pexels.com/photos/13610249/pexels-photo-13610249.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") 30 fill / 10px / 5px stretch; */
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Border Types with Buttons</h1>
+
+  <div class="button-container">
+    <button class="solid-border">Solid Border</button>
+    <button class="dashed-border">Dashed Border</button>
+    <button class="dotted-border">Dotted Border</button>
+    <button class="double-border">Double Border</button>
+    <button class="groove-border">Groove Border</button>
+    <button class="ridge-border">Ridge Border</button>
+    <button class="inset-border">Inset Border</button>
+    <button class="outset-border">Outset Border</button>
+  </div>
+</body>
+</html>

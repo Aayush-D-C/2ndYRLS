@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS List Styling Properties</title>
+  <style>
+    /* General body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .list-container {
+      width: 90%;
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #555;
+    }
+
+    /* List style type */
+    .list-type-disc {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .list-type-circle {
+      list-style-type: circle;
+      padding-left: 20px;
+    }
+
+    .list-type-square {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .list-type-roman {
+      list-style-type: upper-roman;
+      padding-left: 20px;
+    }
+
+    /* List style position */
+    .list-position-inside {
+      list-style-position: inside;
+      padding-left: 0;
+    }
+
+    .list-position-outside {
+      list-style-position: outside;
+      padding-left: 20px;
+    }
+
+    /* List style image */
+    .list-image {
+      list-style-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR96bi1iH6GWM1wRmQezQHTqC30PPUaBNVmg&s');
+      padding-left: 30px;
+    }
+
+    /* Marker offset (not widely supported) */
+    /* Marker offset is deprecated, so here's a note */
+    .marker-offset-note {
+      font-size: 14px;
+      color: #777;
+      font-style: italic;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>CSS List Styling Properties</h1>
+
+  <div class="list-container">
+    <h2>1. List Style Type</h2>
+    <ul class="list-type-disc">
+      <li>Item with Disc</li>
+      <li>Another Item with Disc</li>
+    </ul>
+    <ul class="list-type-circle">
+      <li>Item with Circle</li>
+      <li>Another Item with Circle</li>
+    </ul>
+    <ul class="list-type-square">
+      <li>Item with Square</li>
+      <li>Another Item with Square</li>
+    </ul>
+    <ul class="list-type-roman">
+      <li>Item with Roman Numerals</li>
+      <li>Another Item with Roman Numerals</li>
+    </ul>
+
+    <h2>2. List Style Position</h2>
+    <ul class="list-position-inside">
+      <li>Item with Position Inside</li>
+      <li>Another Item with Position Inside</li>
+    </ul>
+    <ul class="list-position-outside">
+      <li>Item with Position Outside</li>
+      <li>Another Item with Position Outside</li>
+    </ul>
+
+    <h2>3. List Style Image</h2>
+    <ul class="list-image">
+      <li>Item with Image Bullet</li>
+      <li>Another Item with Image Bullet</li>
+    </ul>
+
+    <h2>4. Marker Offset (Deprecated)</h2>
+    <p class="marker-offset-note">
+      The <code>marker-offset</code> property is deprecated and not supported in modern browsers.
+    </p>
+  </div>
+</body>
+</html>

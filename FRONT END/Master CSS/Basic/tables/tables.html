@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Table Properties Explained</title>
+  <style>
+    /* General styling for the table */
+    table {
+      width: 100%;
+      border: 1px solid #000;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Styling to demonstrate border-collapse */
+    .collapse-table {
+      border-collapse: collapse;
+    }
+
+    /* Styling to demonstrate border-spacing */
+    .spacing-table {
+      border-collapse: separate;
+      border-spacing: 10px 5px;
+    }
+
+    /* Styling to demonstrate caption-side */
+    .caption-bottom {
+      caption-side: bottom;
+    }
+
+    /* Styling to demonstrate empty-cells */
+    .hide-empty {
+      empty-cells: hide;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">CSS Table Properties</h1>
+
+  <h2>1. border-collapse</h2>
+  <p>Collapses or separates table borders. Below is a table with <code>border-collapse: collapse</code>.</p>
+  <table class="collapse-table">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+    </tr>
+  </table>
+
+  <h2>2. border-spacing</h2>
+  <p>Specifies the spacing between the borders of cells. Below is a table with <code>border-spacing: 10px 5px</code>.</p>
+  <table class="spacing-table">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+    </tr>
+  </table>
+
+  <h2>3. caption-side</h2>
+  <p>Positions the table caption. Below is a table with <code>caption-side: bottom</code>.</p>
+  <table class="caption-bottom">
+    <caption>This is a caption at the bottom</caption>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+    </tr>
+  </table>
+
+  <h2>4. empty-cells</h2>
+  <p>Controls whether empty cells should have borders/backgrounds. Below is a table with <code>empty-cells: hide</code>.</p>
+  <table class="hide-empty">
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td></td> <!-- This cell is empty and will be hidden -->
+    </tr>
+  </table>
+</body>
+</html>

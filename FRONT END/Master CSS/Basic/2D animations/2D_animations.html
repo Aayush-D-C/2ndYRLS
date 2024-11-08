@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url("background.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .titlecard{
+            height: 200px;
+            box-shadow: 2px 3px 4px rgb(111, 111, 111),-2px -3px 4px rgb(110, 110, 110);
+            margin: 200px;
+            backdrop-filter: blur(10px);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: all 0.15s ease-in;
+        }
+
+        .translate{
+            transform: translate(15%,15%);
+        }
+
+        .scale:hover{
+            transform: scale(1.04);
+        }
+
+        .rotate{
+            transform: rotate(5deg);
+        }
+
+        .skew{
+            transform: skew(-20deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="titlecard translate">
+        <h1><code>transform: translate(15%,15%);</code></h1>
+        <p>This titlecard is shifted by 15% to both X and Y direction from original place.</p>
+    </div>
+    <div class="titlecard scale">
+        <h1><code>transform: scale(1.04);</code></h1>
+        <p>This titlecard when is pointed by cursor gets scaled up by it's original size.</p>
+    </div>
+    <div class="titlecard rotate">
+        <h1><code>transform: rotate(5deg);</code></h1>
+        <p>This titlecard is rotated in 2D dimension based on angles</p>
+    </div>
+    <div class="titlecard skew">
+        <h1><code>transform: skew(-20deg);</code></h1>
+        <p>This titlecard is tilted along the X-axis by -20 degrees.</p>
+    </div>    
+</body>
+</html>
