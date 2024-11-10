@@ -4,51 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-            box-sizing: border-box;
-        }
-
-        body{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url("background.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .titlecard{
-            height: 200px;
-            box-shadow: 2px 3px 4px rgb(111, 111, 111),-2px -3px 4px rgb(110, 110, 110);
-            margin: 200px;
-            backdrop-filter: blur(10px);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            transition: all 0.15s ease-in;
-        }
-
-        .translate{
-            transform: translate(15%,15%);
-        }
-
-        .scale:hover{
-            transform: scale(1.04);
-        }
-
-        .rotate{
-            transform: rotate(5deg);
-        }
-
-        .skew{
-            transform: skew(-20deg);
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="titlecard translate">

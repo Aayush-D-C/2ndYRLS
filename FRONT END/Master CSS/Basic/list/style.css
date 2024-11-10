@@ -1,0 +1,72 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    color: #444;
+  }
+
+  .list-container {
+    width: 90%;
+    max-width: 800px;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    margin-top: 20px;
+    color: #555;
+  }
+
+  /* List style type */
+  .list-type-disc {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .list-type-circle {
+    list-style-type: circle;
+    padding-left: 20px;
+  }
+
+  .list-type-square {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+
+  .list-type-roman {
+    list-style-type: upper-roman;
+    padding-left: 20px;
+  }
+
+  /* List style position */
+  .list-position-inside {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+  .list-position-outside {
+    list-style-position: outside;
+    padding-left: 20px;
+  }
+
+  /* List style image */
+  .list-image {
+    list-style-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR96bi1iH6GWM1wRmQezQHTqC30PPUaBNVmg&s');
+    padding-left: 30px;
+  }
+
+  /* Marker offset (not widely supported) */
+  /* Marker offset is deprecated, so here's a note */
+  .marker-offset-note {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+  }

@@ -1,0 +1,66 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Default cursor styles */
+  .default-cursor {
+    cursor: default;
+  }
+
+  .pointer-cursor {
+    cursor: pointer;
+  }
+
+  .text-cursor {
+    cursor: text;
+  }
+
+  .wait-cursor {
+    cursor: wait;
+  }
+
+  .crosshair-cursor {
+    cursor: crosshair;
+  }
+
+  /* Custom image cursor */
+  .custom-cursor {
+    cursor: url('https://www.simpleimageresizer.com/_uploads/photos/190153b7/cursor_1_optimized.png'), auto;
+  }
+
+  /* Custom emoji cursor */
+  .emoji-cursor {
+    cursor: url('https://via.placeholder.com/25x25.png?text=😀'), auto;
+  }
+
+  /* Disabled cursor */
+  .disabled-cursor {
+    cursor: not-allowed;
+    color: #888;
+  }
