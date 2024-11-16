@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(4, 244, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#page1 h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+#box1{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(28, 2, 53);
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    color: white;
+    gap: 30px;
+    align-items: center;
+}
+
+#page2 h2{
+    font-weight: 800;
+    padding: 0 30px;
+    text-align: center;
+}
+
+
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(204, 255, 0);
+}  
+
+
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(240, 8, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+#page3 h1{
+    font-size: 8rem;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-style: italic;
+}
+
+#page3 h2{
+    font-size: 4rem;
+    color: white;
+    font-weight: 600;
+}
+
+#page4{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#page4 h1{
+    font-size: 35vw;
+    color: white;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-text-stroke: 8px rgb(224, 149, 149);
+    text-transform: uppercase;
+    padding-left: 100px;
+}
+/* 
+#page5{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(55, 0, 255);
+} */

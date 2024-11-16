@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.strings_intro{
+    text-align: center;
+    margin: 34px;
+    word-break: keep-all;
+}
+
+.string_functions{
+    padding: 34px;
+}
