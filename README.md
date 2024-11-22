@@ -40,10 +40,8 @@ Feel free to explore, use, and build upon this knowledge as you wish! 🚀
 ---
 
 ### 3. **Game Development**
-   - Introduction to **Blender** for 3D asset creation.
-   - Game story development (Ame Pal and Zaya – my dream project).
-   - Exploring **Unreal Engine 5** for immersive game design.
-
+      - Cannot Disclose anything related to this but yes i am a enthuastic game developer
+      
 ---
 
 ### 4. **Software Development**
@@ -81,7 +79,7 @@ Feel free to explore, use, and build upon this knowledge as you wish! 🚀
    - Designed responsive, interactive web pages using HTML, CSS, and JavaScript.
 
 3. **Game Story Development**
-   - Conceptualized and began scripting a love story for a game featuring *Ame Pal* and *Zaya*.
+   - Conceptualized and began scripting a &*@!(@&#$(@!()(@&! [NOT SO SOON :)].
 
 ---
 
