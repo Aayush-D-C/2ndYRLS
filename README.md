@@ -79,7 +79,7 @@ Feel free to explore, use, and build upon this knowledge as you wish! 🚀
    - Designed responsive, interactive web pages using HTML, CSS, and JavaScript.
 
 3. **Game Story Development**
-   - Conceptualized and began scripting a love story for a game featuring *Ame Pal* and *Zaya*.
+   - Conceptualized and began scripting a &*@!(@&#$(@!()(@&! [NOT SO SOON :)].
 
 ---
 
