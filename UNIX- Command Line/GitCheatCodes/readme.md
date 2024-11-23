@@ -85,3 +85,11 @@ This cheat sheet covers essential Git commands for quick reference.
 
 ## Learn More
 For an in-depth guide, visit: [Git Documentation](https://git-scm.com/doc)
+
+---
+
+##If u are using node.js or any other frameworks
+- In case you are using along with dependencies then u might want some of the modules to not get uploaded in github then in that case u can add i your .gitignore use this repo to add all your .gitignore according to your need 
+-https://github.com/github/gitignore
+
+ ---
