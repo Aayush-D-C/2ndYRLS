@@ -2,7 +2,7 @@
 Tricks to Remember:
     [] => List (Mutable, ordered)
     () => Tuple (Immutable, ordered)
-    {} => Dictionary (Mutable, unordered key-value pairs)
+    {} => Dictionary (Mutable, unordered key-value pairs) / Sets
 """
 
 # Creating a Dictionary
