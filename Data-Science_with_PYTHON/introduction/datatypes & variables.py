@@ -38,3 +38,34 @@ print("The type of", complexNum, "is", type(complexNum))
 number = 10
 print(float(number))  # Integer to float
 print(str(number))    # Integer to string
+
+
+#Use of fstring[formatted string literals]
+
+first_name = "Alice"
+print(f"My name is {first_name}");
+
+#Formating Numbers
+
+value = 1234.56789
+print(f"Value with 2 decimals: {value:.2f}")
+# Output: Value with 2 decimals: 1234.57
+
+number = 1234567
+print(f"Formatted number: {number:,}")
+# Output: Formatted number: 1,234,567
+
+# Multi-Line String
+name = "Alice"
+age = 25
+info = f"""
+Name: {name}
+Age: {age}
+"""
+print(info)
+
+'''
+Advantages of f-strings
+Readability: Easier to read and write compared to older formatting methods like .format() or %.
+Performance: Faster than other string formatting techniques since it is evaluated at runtime.
+'''
