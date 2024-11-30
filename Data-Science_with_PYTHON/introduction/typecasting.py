@@ -10,4 +10,4 @@ print(str(gpa))
 print(int(is_student))
 
 place = input("Where do you live?:")
-print(f"Your live in {place}")
+print(f"Your live in {place}");
