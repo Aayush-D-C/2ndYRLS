@@ -1,6 +1,8 @@
 # ------------------------------Strings in Python----------------------------------------
 """
 This script demonstrates the properties and methods of strings in Python.
+
+String is immutable
 """
 
 # String Declarations
@@ -38,3 +40,17 @@ print("Find position of 'World':", strExample.find("World"))
 # Splits into a list of substrings
 strSentence = "The spark of creativity is yours; we are merely the tools to bring it to life."
 print("Split on ';':", strSentence.split(';'))
+
+blogHeading = "introduction TO flask"
+print(blogHeading.capitalize())
+
+print(blogHeading.center(21))
+
+double = " hello  hello"
+print(double.count("hello"))
+
+print(double.endswith("hello"))
+
+print(double.isprintable())
+print(double.isspace())
+print(strSentence.istitle())
