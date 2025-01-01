@@ -3,53 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Video Downloader</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        form {
-            margin-top: 20px;
-        }
-        input {
-            padding: 10px;
-            width: 60%;
-            margin-bottom: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        .message {
-            margin: 20px 0;
-        }
-    </style>
+    <title>YouTube Downloader</title>
 </head>
 <body>
-    <h1>🔥 YouTube Video Downloader</h1>
-    <p>Enter a YouTube video URL below to download the video.</p>
+    <h1>YouTube Video Downloader</h1>
 
+    <!-- Flash messages -->
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
-            <div class="message">
-                {% for category, message in messages %}
-                    <p class="{{ category }}">{{ message }}</p>
-                {% endfor %}
-            </div>
+            <ul>
+            {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+            </ul>
         {% endif %}
     {% endwith %}
 
-    <form action="/download" method="post">
-        <input type="url" name="video_url" placeholder="Enter YouTube URL here..." required>
-        <button type="submit">Download</button>
+    <form action="/download" method="POST">
+        <label for="video_url">YouTube URL:</label><br>
+        <input type="text" id="video_url" name="video_url" required><br><br>
+
+        <!-- Checkbox to choose download type -->
+        <input type="checkbox" id="download_audio" name="download_audio">
+        <label for="download_audio">Download audio (MP3)</label><br><br>
+
+        <input type="submit" value="Download">
     </form>
 </body>
 </html>
