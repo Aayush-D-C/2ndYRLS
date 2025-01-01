@@ -12,9 +12,10 @@ x = input("Enter any number")
 
 while(True):
 
+    print(x)
+    
     if(int(x)>2):
         x = input("Enter any number:")
     else:
         break
     
-    print(x)

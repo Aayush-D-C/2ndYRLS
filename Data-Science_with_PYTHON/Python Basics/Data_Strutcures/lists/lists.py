@@ -8,10 +8,15 @@ l1 = ['1', 'hi', 'you', 'human']
 print(l1)
 print("Type of l1:", type(l1))
 
+#To check inside a list a specific element
+if 2 in l1:
+    print("Yes")
+
 # Accessing Elements
 print("First element:", l1[0])
 print("Last element:", l1[-1])
 print("First three elements:", l1[0:3])
+print(l1[:])
 
 # Modifying a List
 l1.append("Aayush")  # Add an element to the end
@@ -33,3 +38,10 @@ print("After sorting:", l1)
 l2 = [3, 4, 5]
 print("Concatenation:", l1 + l2)
 print("Repetition:", l2 * 4)
+
+#List Comprehension
+lst = [i for i in range(5)]
+print(lst)
+
+lst = [i for i in range(10) if i%2==0]
+print(lst)
