@@ -46,7 +46,10 @@ print("After Removing Banana:", Fruit)
 
 #Nested Dictionary
 nested_dict = {
-    "Fruit": {"Apple": 10, "Banana": 30},
+    "Fruit": {
+          "Apple": 10,
+          "Banana": 30
+        },
     "Vegetables": {"Carrot": 20, "Potato": 15}
 }
 print(nested_dict["Fruit"]["Apple"])  # Output: 10

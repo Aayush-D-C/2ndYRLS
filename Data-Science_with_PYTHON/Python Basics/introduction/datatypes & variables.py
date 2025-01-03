@@ -31,7 +31,7 @@ print("The type of", boolValue, "is", type(boolValue))
 # Complex Numbers
 complexNum = 3 + 4j
 print(complexNum)
-print("The type of", complexNum, "is", type(complexNum))
+print(f"The type of {complexNum}", "is", type(complexNum))
 
 # Type Conversion
 # Converting between types

@@ -34,10 +34,48 @@ print("After inserting 'Dangi':", l1)
 l1.sort()  # Sort the list
 print("After sorting:", l1)
 
+# To check if certain number is int he list or not
+print(69 in l1)
+
+#To copy the list in new list
+l2 = l1.copy()
+print("Copied list l1 to l2:",l2)
+
+#clear the list 
+l1.clear()
+print(l1)
+
+
 # List Operations
 l2 = [3, 4, 5]
 print("Concatenation:", l1 + l2)
 print("Repetition:", l2 * 4)
+
+
+#Largest in the list 
+numbers  = [10,20,30,40,50]
+
+largest = numbers[0]
+
+for num in numbers:
+    if(largest<num):
+        largest = num
+
+print(f"Largest Number is {largest}")
+
+# 2D Lists  >> Very important for ML
+
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+    ]
+
+print(matrix[2][2])
+
+# for row in matrix:
+#     for item in row:
+#         print(item)
 
 #List Comprehension
 lst = [i for i in range(5)]

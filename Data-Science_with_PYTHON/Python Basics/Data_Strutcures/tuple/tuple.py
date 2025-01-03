@@ -88,6 +88,9 @@ tup3 = (1, 2, 2, 3, 4, 2, 5)
 print("Count of 2 in Tuple 3:", tup3.count(2))  # Count occurrences of 2
 print("Index of 3 in Tuple 3:", tup3.index(3))  # Find the index of the first occurrence of 3
 
+#To find the index of 2 in tup3
+print(tup3.index(2))
+
 # Converting a list to a tuple
 list_example = [10, 20, 30]
 converted_tuple = tuple(list_example)
