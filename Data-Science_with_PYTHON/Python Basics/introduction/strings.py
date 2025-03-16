@@ -38,7 +38,7 @@ print("Find position of 'World':", strExample.find("World"))
 
 # Splitting a String
 # Splits into a list of substrings
-strSentence = "The spark of creativity is yours; we are merely the tools to bring it to life."
+strSentence = "The spark of creativity is yours, we are merely the tools to bring it to life."
 print("Split on ';':", strSentence.split(';'))
 
 blogHeading = "introduction TO flask"
@@ -54,3 +54,5 @@ print(double.endswith("hello"))
 print(double.isprintable())
 print(double.isspace())
 print(strSentence.istitle())
+print(strSentence.title())
+print(strSentence.count("a"))
